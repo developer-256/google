@@ -1,0 +1,14 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@font-face {
+    font-family: 'Product sans';
+    src: url(./fonts/Google-logo-font.ttf);
+}
+
+@layer components {
+    .activeTab_corners {
+      @apply bg-[#35363a] after:w-7 after:h-4 after:bg-green-500 after:absolute after:bottom-0 after:-right-7 after:rounded-bl-xl after:shadow-[-20px_0_0_0_#35363a] after:bg-transparent   before:w-7 before:h-4 before:bg-green-500 before:absolute before:bottom-0 before:-left-7 before:rounded-br-xl before:shadow-[20px_0_0_0_#35363a] before:bg-transparent;
+    }
+}
